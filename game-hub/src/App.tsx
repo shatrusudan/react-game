@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import { Grid, GridItem, Show } from '@chakra-ui/react'
 import Navbar from './components/Navbar'
+import GameGrid from './components/GameGrid'
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
       </GridItem>
     </Show>
     <GridItem area="main" >
-      main
+      <GameGrid />
     </GridItem>
   </Grid>
   )
