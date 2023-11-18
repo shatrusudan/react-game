@@ -1,8 +1,9 @@
-import { SimpleGrid, Skeleton, Text } from '@chakra-ui/react';
+import { Button, SimpleGrid, Skeleton, Text } from '@chakra-ui/react';
 import useGames from '../hooks/useGames';
 import GameCard from './GameCard';
 import GameCardSkeleton from './GameCardSkeleton';
 import GameCardContainer from './GameCardContainer';
+import { getTomorrowDate } from '../services/date-service';
 
 const GameGrid = () => {
 
@@ -20,6 +21,7 @@ const skeletons = [1, 2, 3, 4, 5, 6];
             </GameCardContainer>
             ))}
         </SimpleGrid>
+        <Button onClick={getTomorrowDate}> Date</Button>
     </>
   )
 }
